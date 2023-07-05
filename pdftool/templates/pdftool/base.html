@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Default title{% endblock %}</title>
+    </head>
+    <body>
+        <div id="header">
+            {% block header %}{% endblock %}
+        </div>
+        <div id="content">
+            <h1>{{ student.name }}</h1>
+            <p>{{ student.roll_number }}</p>
+            <p>{{ student.department }}</p>
+        </div>
+        <div id="footer">
+            {% block footer %}{% endblock %}
+        </div>
+    </body>
+</html>

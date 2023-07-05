@@ -1,0 +1,14 @@
+{% extends 'pdftool/report.html' %}
+
+{% block content %}
+    {% for lyra in lyras %}
+        <div class="lyra">
+            <h2><a href="{% url 'lyra_detail' pk=lyra.pk %}">{{ lyra.title }}</a></h2>
+            <p>{{ lyra.Name}}</p>
+            <p>{{ lyra.RegNo}}</p>
+            <p>{{ lyra.Department}}</p>
+            <p>{{ lyra.Grade}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+

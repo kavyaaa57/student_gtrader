@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Report</title>
+    <style>
+        div {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        body {
+            background-color: white;
+            /* black */
+            text-align: center;
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* use Netflix Sans font */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+            color: #e5e5e5;
+            /* light gray */
+        }
+
+        .container {
+            top: 50%;
+            left: 80%;
+            margin-left: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color:  rgb(66, 63, 63);
+            /* light gray */
+            text-align: center;
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color:  rgb(61, 60, 60);
+            text-align: center;
+        }
+
+        .label {
+            flex: 1;
+            font-weight: bold;
+            color: #e5e5e5;
+            /* light gray */
+        }
+
+        .value {
+            flex: 2;
+            color: #1D3557;
+            /* medium gray */
+            transform: translateX(-250px);
+
+        }
+
+        .label, .value {
+        color: #1D3557;
+        
+
+    }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-top: 20px;
+            margin: 0 auto;
+            text-align: center;
+            color: #333333;
+            /* dark gray */
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            background-color: #eaf5ff;
+            /* pale blue */
+            color: #333333;
+            /* dark gray */
+        }
+
+        th {
+            background-color: gray;
+            /* dark blue */
+            color: #ffffff;
+            /* white */
+        }
+
+
+        .remarks {
+            margin-top: 20px;
+            color: #e5e5e5;
+            /* light gray */
+            padding: 20px;
+            background-color: #1c1c1c;
+            /* dark gray */
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+    <img src="logo.png" alt="KGISL Institute of Technology Logo" style="float: left; margin-right: 10px; width: 100px; height: 100px;
+    display: block; ">
+    <h1>KGISL INSTITUTE OF TECHNOLOGY</h1>
+    <div class="container" style="text-align: center; ">
+
+        <br>
+        {% block content %}
+
+        <div class="row">
+            <span class="label">Name:</span>
+            <span class="value"> {{Name}} </span>
+        </div>
+        <br>
+        <div class="row">
+            <span class="label">Reg No:</span>
+            <span class="value"> {{RegNo}}</span>
+        </div>
+        <br>
+        <div class="row">
+            <span class="label">Department:</span>
+            <span class="value"> {{Department}} </span>
+        </div>
+        <br>
+        <div class="row">
+            <span class="label">Grade:</span>
+            <span class="value"> {{Grade}} </span>
+        </div>
+        <br>
+    </div>
+    {% endblock %}
+    <table>
+        <tr>
+            <th>Course ID</th>
+            <th>Course Name</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>{{course_id_1}}</td>
+            <td>{{course_name_1}}</td>
+            <td>{{course_grade_1}}</td>
+        </tr>
+        <tr>
+            <td>{{course_id_2}} </td>
+            <td>{{course_name_2}}</td>
+            <td>{{course_grade_2}}</td>
+        </tr>
+        <tr>
+            <td>{{course_id_3}}</td>
+            <td>{{course_name_3}}</td>
+            <td>{{course_grade_3}}</td>
+        </tr>
+        <tr>
+            <td>{{course_id_4}}</td>
+            <td>{{course_name_4}} </td>
+            <td>{{course_grade_4}}</td>
+        </tr>
+        <tr>
+            <td>{{course_id_5}}</td>
+            <td>{{course_name_5}}</td>
+            <td>{{course_grade_5}}</td>
+        </tr>
+        <tr>
+            <td>{{course_id_6}}</td>
+            <td> {{course_name_6}}</td>
+            <td>{{course_grade_6}}</td>
+        </tr>
+
+    </table>
+    <br>
+    <div class="remarks">
+        <table>
+
+            <tr>
+                <td style="color: #1D3557; font-weight: bold; font-size: 14px;">Average grade</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td style="color: #1D3557; font-weight: bold; font-size: 14px;">Remarks</td>
+                <td>Good performance. Keep it up!</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+
+
+</html>
+
+

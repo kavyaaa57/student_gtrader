@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE report SYSTEM "report.dtd">
+<report>
+    <student name="John " regno="12345" department="Computer Science" grade="A">
+        <course id="HS3252" name="Professional English 2">
+            <grade>A</grade>
+        </course>
+        <course id="GE3252" name="Tamils and Technology">
+            <grade>B</grade>
+        </course>
+        <course id="GE3251" name="Engineering Graphics">
+            <grade>A</grade>
+        </course>
+        <course id="MA3251" name="Statistics and Numerical Methods">
+            <grade>A+</grade>
+        </course>
+        <course id="BE3251" name="Basic Electrical and Electronic Engineering">
+            <grade>A+</grade>
+        </course>
+        <course id="PH3256" name="Physics for Information Science">
+            <grade>A+</grade>
+        </course>
+        <course id="MA3251" name="Data Structure Design">
+            <grade>A+</grade>
+        </course>
+    </student>
+    <remarks>
+        <table>
+            <tr>
+                <td>Total courses</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Average grade</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Remarks</td>
+                <td>Good performance. Keep it up!</td>
+            </tr>
+        </table>
+    </remarks>
+    <signature>Principal</signature>
+</report>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF TOOL</title>
+
+    <style>
+        body {
+            background: #D6EAF8;
+            /* Pale blue background color */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+            color: #1D3557;
+            /* Dark greenish blue text color */
+        }
+
+        h3 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            color: #1D3557;
+            /* Dark greenish blue text color */
+        }
+
+        button {
+            background-color: #1D3557;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 30px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in-out;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            font-family: "Roboto", sans-serif;
+        }
+
+        button:hover {
+            background: linear-gradient(to bottom, #0F4C81, #316AC5);
+            /* Hover gradient color scheme */
+        }
+
+        a {
+            color: white;
+            /* Dark greenish blue text color */
+            text-decoration: none;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #FADBD8;
+            /* Pale pinkish red alert color */
+            color: #CB4335;
+            /* Darker pinkish red text color */
+            margin-top: 20px;
+        }
+
+        .alert.success {
+            background-color: #C8F7C5;
+            /* Pale green success color */
+            color: #196F3D;
+            /* Dark green text color */
+        }
+
+        .alert.info {
+            background-color: #D4E6F1;
+            /* Pale blue info color */
+            color: #1A5276;
+            /* Dark blueish green text color */
+        }
+
+        .alert.warning {
+            background-color: #FDEBD0;
+            /* Pale yellow warning color */
+            color: #B9770E;
+            /* Dark yellow text color */
+        }
+
+        .alert.dismissable {
+            position: relative;
+        }
+
+        .alert .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    {% for message in messages %}
+    <div class="alert alert-{{ messages.tags }} alert-dismissible fade show" role="alert">
+
+        <strong>Message:</strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+
+    <h1>Welcome to KGiSL INSTITUTE OF TECHNOLOGY</h1>
+
+    <div style="text-align: center;">
+        <button type="submit"><a href="/signin">Sign In</a></button>
+
+        
+    </div>
+
+</body>
+
+</html>
